@@ -20,7 +20,7 @@ def second_supply_for_fourth_of_july(supplies_hash)
   supplies_hash[:summer][:fourth_of_july][1]
 end
 
-def add_supply_to_winter_holidays(holidays_hash, supply)
+def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash[:winter][:new_years] << supply
 
     holiday_hash[:winter][:christmas] << supply
