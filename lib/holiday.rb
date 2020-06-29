@@ -32,8 +32,7 @@ end
 
 def add_new_holiday_with_supplies(supplies_hash, season, new_holiday_name, supplies_list)
   supplies_hash[season][new_holiday_name] = supplies_list
-
-  supplies_hash
+  return supplies_hash
 end
 
 def all_winter_holiday_supplies(supplies_hash)
@@ -42,7 +41,7 @@ def all_winter_holiday_supplies(supplies_hash)
   end.flatten
 end
 
-def all_supplies_in_holidays(supplies_hash)
+def all_supplies_in_holidays(holiday_hash)
   holiday_supplies.each do |season, holidays|
     puts "#{season.capitalize}:"
     holidays.each do |holiday, supplies|
