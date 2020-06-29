@@ -42,7 +42,7 @@ def all_winter_holiday_supplies(supplies_hash)
   end.flatten
 end
 
-def all_supplies_in_holidays(supplies_hash)
+def all_supplies_in_holiday(supplies_hash)
   holiday_supplies.each do |season, holidays|
     puts "#{season.capitalize}:"
     holidays.each do |holiday, supplies|
